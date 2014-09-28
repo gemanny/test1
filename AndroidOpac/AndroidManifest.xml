@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.dnu.androidopac"
+    android:versionCode="10"
+    android:versionName="1.9" >
+
+    <uses-sdk android:minSdkVersion="7" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <service
+            android:name="edu.dnu.androidopac.authenticator.AccountAuthenticatorService"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+
+        <activity
+            android:name="edu.dnu.androidopac.authenticator.AuthenticatorActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/login"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="edu.dnu.androidopac.SplashScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.dnu.androidopac.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="edu.dnu.androidopac.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.dnu.androidopac.ChildActivity"
+            android:label="@string/title_activity_child" >
+        </activity>
+        
+        <activity
+            android:name="edu.dnu.androidopac.Credits"
+            android:label="@string/credits" >
+        </activity>
+        
+        <activity
+            android:name="edu.dnu.androidopac.Information"
+            android:label="@string/information" >
+        </activity>
+        
+        <activity
+            android:name="edu.dnu.androidopac.search.SearchFormActivity"
+            android:label="@string/searchform" >
+            <intent-filter>
+                <action android:name="edu.dnu.androidopac.search.SearchFormActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.dnu.androidopac.search.SearchResultsActivity"
+            android:label="@string/searchresults" >
+            <intent-filter>
+                <action android:name="edu.dnu.androidopac.search.SearchResultsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.dnu.androidopac.mybooks.MyBooksActivity"
+            android:label="Mybooks" >
+            <intent-filter>
+                <action android:name="edu.dnu.androidopac.mybooks.MyBooksActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.dnu.androidopac.mybooks.MailActivity"
+            android:label="MybooksMail" >
+            <intent-filter>
+                <action android:name="edu.dnu.androidopac.mybooks.MailActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.dnu.androidopac.EditPreferences"
+            android:label="@string/menu_preferences" />        
+    </application>
+    <!-- permissions -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

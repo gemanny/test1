@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Android Opac</string>
+     <string name="app_name_version">Android OPAC v2.0</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_child">ChildActivity</string>
+    <string name="menu_settings">Settings</string>
+    <string name="label">Android OPAC</string>
+    <string name="my_books_button">My Books</string>
+    <string name="login_button">Log-in</string>
+    <string name="share_button">Share URL</string>
+    <string name="user_not_logged">You are not logged in!!</string>
+    <string name="user_logged">Welcome, </string>
+    <string name="search_button">Search</string>
+    <string name="searchresults">Search Results</string>
+    <string name="itemdetails">Details</string>
+     <string name="search_term_max">Maximum Search Terms Reached</string>
+    <string name="menu_preferences">Settings</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_info">Info</string>
+    <string name="menu_login">Login</string>
+    <string name="button_remove">Remove</string>
+    <string name="button_save">Save</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_reset">Reset</string>
+    <string name="menu_scan">Scan</string>
+     <string name="favorite_book">No Favorite Books.Please Search And Choose One</string>
+    <string name="credits">Credits</string>
+    <string name="information">Information</string>
+    <string name="remove">The following were selected to remove...\n</string>
+    <string name="click_save">\nClick \"Save\" to Save the Unselected ...\n</string>
+    <string name="save">Saved...\n</string>
+    <string name="message">Do you want to exit ?</string>
+    <string name="positive">Yes</string>
+    <string name="negative">No</string> 
+    
+    <string name="resultdefaultlibrary">Result Default Library</string>
+    <string name="defaultlibrary">Default Library</string>
+    
+    <string name="prefcat_advanced">Advanced</string>
+    <string name="prefcat_debug">Debugging</string>
+    <string name="pref_base_url_key">base.url</string>
+    <string name="pref_base_url_title">Base URL</string>
+    <string name="pref_base_url_summary">Enter the base Koha URL.</string>
+    <string name="base_url">http://koha.vn/cgi-bin/koha/</string>
+    <string name="pref_login_url_key">login.url</string>
+    <string name="pref_login_url_title">Login URL</string>
+    <string name="pref_login_url_summary">Enter the login URL (will be appended to base URL).</string>
+    <string name="login_url">opac-user.pl</string>
+    <string name="add_button">Add</string>
+    <string name="add_book_button">Add Favorite Books</string>
+    <string name="reset_button">Reset</string>
+    <string name="searchform">Library Search</string>
+    <string name="search_options_prompt">Search by?</string>
+
+    <string-array name="search_options_array">
+        <item>Keyword</item>
+        <item>Subject</item>
+        <item>Title</item>
+        <item>Author</item>
+        <item>Publisher</item>
+        <item>Publisher Location</item>
+        <item>ISBN</item>
+    </string-array>
+    <string-array name="search_options_arrayValues">
+        <item>kw</item>
+        <item>su,wrdl</item>
+        <item>ti,wrdl</item>
+        <item>au,wrdl</item>
+        <item>pb,wrdl</item>
+        <item>pl,wrdl</item>
+        <item>nb</item>
+    </string-array>
+    <string-array name="searchLogicOperators">
+        <item>and</item>
+        <item>or</item>
+        <item>not</item>
+    </string-array>
+    <string name="search_term_added">Added Search Term</string> 
+    <string name="reset_search_term">Reset Search Term</string>
+    <string name="search_pub_date_range">Publication Date Range</string>
+    <string name="search_pub_date_range_desc">(e.g. "1999-2001")</string>
+    <string name="search_form_go">Run search</string>
+    <string name="pref_search_url_key">search.url</string>
+    <string name="pref_search_url_title">Search URL</string>
+    <string name="pref_search_url_summary">Enter the search URL components (will be appended to base URL).</string>
+    <string name="search_url">opac-search.pl?format=rss2</string>
+    <string name="search_inprogress">Searching</string>
+    <string name="placeholdform">Place Hold</string>
+    <string name="pickup_location">Pickup location:</string>
+    <string name="needed_before_date">Hold Starts on Date (optional):</string>
+    <string name="pickup_expiry_date">Hold Not Needed After (optional):</string>
+    <string name="hold_form_go">Place hold</string>
+    <string name="pref_placehold_url_key">placehold.url</string>
+    <string name="pref_placehold_url_title">Place Hold URL</string>
+    <string name="pref_placehold_url_summary">Enter the place hold URL components (will be appended to base URL).</string>
+    <string name="placehold_url">opac-reserve.pl</string>
+    <string name="pref_hold_via_web_key">hold.web</string>
+    <string name="pref_hold_via_web_title">Place Hold via Web</string>
+    <string name="pref_hold_via_web_summary">Use a web browser to place a hold (i.e external to this app).</string>
+    <string name="pref_branch_key">koha.branch</string>
+    <string name="pref_branch_title">Library Branch</string>
+    <string name="pref_branch_summary">The library branch (leave blank if unknown).</string>
+    <string name="pref_limit_available_key">limit.available</string>
+    <string name="pref_limit_available_title">Available items only</string>
+    <string name="pref_limit_available_summary">Limit the search to available items only.</string>
+    <string name="login">Login</string>
+    <string name="login_username">Login:</string>
+    <string name="username">member</string>
+    <string name="login_password">Password:</string>
+    <string name="password">member1</string>
+    <string name="login_submit">Submit</string>
+    <string name="login_message">Please login</string>
+    <string name="login_authenticating">Authenticating</string>
+    <string name="only_one_account">Currently you may only have at most one account at any one time.</string>
+
+    <!-- Error strings -->
+    <string name="search_bad_request">Sorry, bad request!</string>
+    <string name="search_url_invalid">The URL you have entered is invalid.</string>
+    <string name="search_connection_failure">Sorry the search failed due to a connection problem.</string>
+    <string name="search_no_results">Sorry the search returned no results.</string>
+    <string name="search_no_search_terms">Sorry, no search terms entered.</string>
+    <string name="data_saved_inside_File">Data saved inside File </string>
+    <string name="login_no_name">Please enter a username</string>
+    <string name="login_no_password">Please enter a password</string>
+    <string name="auth_result_no_connection">Server address or port number incorrect</string>
+    <string name="auth_result_success">Authentication successful!</string>
+    <string name="auth_result_fail">Authentication failed.</string>
+    <string name="place_hold_not_logged_in">Sorry you cannot place a hold until you are logged in.</string>
+    <string name="place_hold_on_nothing">Sorry there has been a problem with your request.</string>
+    <string name="load_config_download_error">Sorry there was an error downloading the configuration file.</string>
+    <string name="load_config_error">Sorry there was an error parsing the configuration file.</string>
+    <string name="load_config_success">Successfully loaded the configuration file.</string>
+    <string name="scan_not_available">Sorry you need to install ZXing Barcode Scanner for this.</string>
+    <string name="cover_dec">cover</string>
+    <string name="pref_show_image_key">show.image</string>
+    <string name="pref_show_image_title">Show images in search</string>
+    <string name="pref_show_image_summary">Show images in search</string>
+    <string name="pref_limit_items_key">limit.items</string>
+    <string name="pref_limit_items_title">limit open items</string>
+    <string name="pref_limit_items_summary">open one item at a time in search</string>
+    <string name="invalid_data_error">The data found was too short</string>
+    <string name="my_books">My Books</string>
+    <string name="ils_disabled_error">Sorry, Your Koha does not allow that operation</string>
+    <string name="book_list_load_error">Error Loading My Books</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="no_library_branch_defined">(No Library Branch is defined)</string>
+    <string name="view_more_details">View More Details</string>
+    <string name="title_activity_my_books">MyBooksActivity</string>
+
+</resources>

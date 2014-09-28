@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@drawable/background"
+		>		
+		
+		<LinearLayout			  
+			  android:layout_width="fill_parent"
+			  android:layout_height="fill_parent"
+			  android:orientation="vertical"  >
+
+	
+		       <TextView
+			    android:id="@+id/defaultlibrary"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:background="#D1D1D1"
+			    android:text="Default library"
+			    android:textColor="#000000" />
+
+	
+			<TextView
+			    android:id="@+id/searchUsername"
+			    style="@android:style/TextAppearance.Small"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_margin="2dp"
+			    android:singleLine="true"
+			    android:textStyle="italic" />
+
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" >
+
+				<Spinner
+				    android:id="@+id/spinner1"
+				    android:layout_width="250dp"
+				    android:layout_height="wrap_content"
+				    android:entries="@array/search_options_array"
+				    android:entryValues="@array/search_options_arrayValues"
+				    android:prompt="@string/search_options_prompt" />
+
+			    <Button
+			        android:id="@+id/btnAddGroup"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_weight="0.00"
+			        android:onClick="addSearch"
+			        android:text="@string/add_button"
+			        android:textColor="#006600" />
+
+			</LinearLayout>
+
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content" >
+
+				<EditText
+				    android:inputType="text|textNoSuggestions"
+				    android:id="@+id/searchTerms1"
+				    android:layout_width="250dp"
+				    android:layout_height="wrap_content"
+				    android:singleLine="false" >
+
+				    <requestFocus />
+				</EditText>
+
+				<Button
+				    android:id="@+id/btnRemoveGroup"
+				    android:layout_width="0dip"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:onClick="removeSearch"
+				    android:text="@string/reset_button"
+				    android:textColor="#FF3300" />
+
+			</LinearLayout>
+			
+
+
+			<LinearLayout
+			  android:id="@+id/searchGroup2"
+			  android:layout_width="fill_parent"
+			  android:layout_height="fill_parent"
+			  android:orientation="vertical"
+			  android:visibility="gone" >
+
+				<LinearLayout
+				    android:id="@+id/linearLayout1"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content" >
+
+					<Spinner
+					    android:id="@+id/andornot1"
+					    android:layout_width="fill_parent"
+					    android:layout_height="fill_parent"
+					    android:layout_weight="1"
+					    android:entries="@array/searchLogicOperators" />
+
+					<Spinner
+					    android:id="@+id/spinner2"
+					    android:layout_width="225dp"
+					    android:layout_height="wrap_content"
+					    android:entries="@array/search_options_array"
+					    android:entryValues="@array/search_options_arrayValues"
+					    android:prompt="@string/search_options_prompt" />
+
+				</LinearLayout>
+ 
+				
+				<EditText
+				    android:inputType="text|textNoSuggestions"
+				    android:id="@+id/searchTerms2"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:singleLine="false"
+				    android:text="" />
+
+			</LinearLayout>
+							
+			<LinearLayout
+			  android:id="@+id/searchGroup3"
+			  android:layout_width="fill_parent"
+			  android:layout_height="fill_parent"
+			  android:orientation="vertical" 
+			  android:visibility="gone" >
+
+				<LinearLayout
+				    android:id="@+id/linearLayout2"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content" >
+
+					<Spinner
+					    android:id="@+id/andornot2"
+					    android:layout_width="fill_parent"
+					    android:layout_height="fill_parent"
+					    android:layout_weight="1"
+					    android:entries="@array/searchLogicOperators" />
+
+					<Spinner
+					    android:id="@+id/spinner3"
+					    android:layout_width="225dp"
+					    android:layout_height="wrap_content"
+					    android:entries="@array/search_options_array"
+					    android:entryValues="@array/search_options_arrayValues"
+					    android:prompt="@string/search_options_prompt" />
+
+				</LinearLayout>
+
+				
+					<EditText
+					    android:inputType="text|textNoSuggestions"
+					    android:id="@+id/searchTerms3"
+					    android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:singleLine="false"
+					    android:text="" />
+
+			</LinearLayout>
+					
+  					<TextView android:text="@string/search_pub_date_range"
+							  android:layout_width="fill_parent"
+							  android:singleLine="false"
+							  android:layout_height="wrap_content" />
+  					<TextView android:text="@string/search_pub_date_range_desc"
+							  android:layout_width="fill_parent"
+							  android:singleLine="false"
+							  android:layout_height="wrap_content"
+							  style="@android:style/TextAppearance.Small" />
+					<EditText android:text=""
+							  android:id="@+id/pub_date_range"
+							  android:inputType="date"
+							  android:layout_width="fill_parent"
+							  android:singleLine="true"
+							  android:layout_height="wrap_content" />
+							  
+				<Button
+				    android:id="@+id/btnSearchGo"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_marginTop="10dp"
+				    android:text="@string/search_form_go" >
+
+				</Button>
+
+
+				    
+								
+			</LinearLayout>
+</ScrollView>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Koha Việt Nam</string>
+    <string name="hello_worlid">Hello world!</string>
+    <string name="action_settings">Cài Đặt</string>
+    <string name="title_activity_child">ChildActivity</string>
+    <string name="menu_settings">Settings</string>
+    <string name="label">Koha Việt Nam</string>
+    <string name="my_books_button">Tủ Sách</string>
+    <string name="login_button">Đăng Nhập</string>
+    <string name="share_button">Share URL</string>
+    <string name="user_not_logged">Bạn Chưa Đăng Nhập</string>
+    <string name="user_logged">Xin Chào</string>
+    <string name="credits_button">Credits</string>
+    <string name="button_remove">Xóa</string>
+    <string name="button_save">Lưu</string>
+    <string name="information">Thông Tin</string>
+    <string name="favorite_book">Chưa Có Quyển Sách Nào.Hãy Tìm Kiếm Và Chọn Một</string>
+    <string name="remove">Quyển Tiếp Theo Được Chọn Để Bỏ...\n</string>
+    <string name="click_save">\nẤn \"Lưu\" Để Lưu Những Quyển Chưa Được Chọn ...\n</string>
+    <string name="save">Đã Lưu...\n</string>
+    <string name="message">Bạn Có Muốn Thoát Không</string>
+    <string name="positive">Có</string>
+    <string name="negative">Không</string> 
+    <string name="search_button">Tìm Kiếm</string>
+    <string name="searchresults">Kết Quả Tìm Kiếm</string>
+    <string name="itemdetails">Chi Tiết</string>
+    <string name="search_term_max">Đã Tối Đa Điều Kiện Tìm Kiếm</string>
+    <string name="menu_preferences">Cài Đặt</string>
+    <string name="menu_search">Tìm</string>
+    <string name="menu_info">Thông Tin</string>
+    <string name="menu_login">Đăng Nhập</string>
+    <string name="menu_logout">Đăng Xuất</string>
+    <string name="menu_reset">Làm Mới</string>
+    <string name="menu_scan">Quyét</string>
+    
+    <string name="prefcat_advanced">Nâng Cao</string>
+    <string name="prefcat_debug">Gõ Rối</string>
+
+    <string name="pref_base_url_key">base.url</string>
+    <string name="pref_base_url_title">Base URL</string>
+    <string name="pref_base_url_summary">Enter the base Koha URL.</string>
+    <string name="base_url">http://koha.vn/cgi-bin/koha/</string>
+
+    <string name="pref_login_url_key">login.url</string>
+    <string name="pref_login_url_title">Login URL</string>
+    <string name="pref_login_url_summary">Nhập login URL (sẽ đươc nối với nguồn URL).</string>
+    <string name="login_url">opac-user.pl</string>
+    
+    <string name="add_button">Thêm</string>
+    <string name="reset_button">Xóa</string>
+    <string name="searchform">Tìm Trong Thư Viện</string>
+    <string name="search_options_prompt">Tìm Bằng</string>
+    <string-array name="search_options_array">
+        <item>Từ Khóa</item>
+        <item>Thể Loại</item>
+        <item>Tựa Đề</item>
+        <item>Tác Giả</item>
+        <item>Nhà Xuất Bản</item>
+        <item>Địa Chỉ Nhà Xuất Bản</item>
+        <item>ISBN</item>
+    </string-array>
+    <string-array name="search_options_arrayValues">
+        <item>kw</item>
+        <item>su,wrdl</item>
+        <item>ti,wrdl</item>
+        <item>au,wrdl</item>
+        <item>pb,wrdl</item>
+        <item>pl,wrdl</item>
+        <item>nb</item>
+    </string-array>
+    <string-array name="searchLogicOperators">
+        <item>và</item>
+        <item>hoặc</item>
+        <item>không</item>
+    </string-array>
+    <string name="search_term_added">Đã Thêm 1 Điều Kiện Tìm Kiếm</string>
+    <string name="search_term_reset">Đã Xóa 1 Điều Kiện Tìm Kiếm</string>
+    <string name="search_pub_date_range">Khoảng Thời Gian Xuất Bản</string>
+    <string name="search_pub_date_range_desc">(Ví Dụ: "1999-2001")</string>
+    <string name="search_form_go">Tìm</string>
+    <string name="pref_search_url_key">search.url</string>
+    <string name="pref_search_url_title">Search URL</string>
+    <string name="pref_search_url_summary">Enter the search URL components (will be appended to base URL).</string>
+    <string name="search_url">opac-search.pl?format=rss2</string>
+    <string name="search_inprogress">Đang Tìm Kiếm</string>
+    <string name="placeholdform">Place Hold</string>
+    <string name="pickup_location">Pickup location:</string>
+    <string name="needed_before_date">Hold Starts on Date (optional):</string>
+    <string name="pickup_expiry_date">Hold Not Needed After (optional):</string>
+    <string name="hold_form_go">Place hold</string>
+    <string name="pref_placehold_url_key">placehold.url</string>
+    <string name="pref_placehold_url_title">Place Hold URL</string>
+    <string name="pref_placehold_url_summary">Enter the place hold URL components (will be appended to base URL).</string>
+    <string name="placehold_url">opac-reserve.pl</string>
+
+    <string name="pref_hold_via_web_key">hold.web</string>
+    <string name="pref_hold_via_web_title">Place Hold via Web</string>
+    <string name="pref_hold_via_web_summary">Use a web browser to place a hold (i.e external to this app).</string>
+
+    <string name="pref_branch_key">koha.branch</string>
+    <string name="pref_branch_title">Library Branch</string>
+    <string name="pref_branch_summary">The library branch (leave blank if unknown).</string>
+
+    <string name="pref_limit_available_key">limit.avarailable</string>
+    
+    <string name="login">Đăng Nhập</string>
+    <string name="login_username">Tên:</string>
+        <string name="username">member</string>
+    
+    <string name="login_password">Mật Khẩu:</string>
+        <string name="password">member1</string>
+    <string name="login_submit">Đăng Nhập</string>
+    <string name="login_message">Xin Hãy Đăng Nhập</string>
+    <string name="login_authenticating">Đang xác nhận</string>
+    <string name="only_one_account">Currently you may only have at most one account at any one time.</string>
+    
+    <!--  Error strings -->
+    <string name="search_bad_request">Sorry, bad request!</string>
+    <string name="search_url_invalid">The URL you have entered is invalid.</string>
+    <string name="search_connection_failure">Xin lỗi hãy kiểm tra lại kết nối Internet</string>
+    <string name="search_no_results">Xin lỗi,Không tìm thấy kết quả yêu cầu</string>
+    <string name="search_no_search_terms">Hãy nhập từ cần tìm kiếm</string>
+        
+    <string name="login_no_name">Xin Hãy Nhập Tên Người Sử Dụng</string>
+    <string name="login_no_password">Xin Hãy Nhập Mật Khẩu</string>
+    <string name="auth_result_no_connection">Địa Chỉ Server Không Đúng</string>
+    <string name="auth_result_success">Xác Nhận Thành Công</string>
+    <string name="auth_result_fail">Xác Nhận Thất Bại</string>
+  
+    <string name="place_hold_not_logged_in">Bạn Không Thể Đặt Lên Giá Nếu Chưa Đăng Nhập</string>
+    <string name="place_hold_on_nothing">Xin Lỗi.Có Lỗi Xảy Ra Với Yêu Cầu Của Bạn</string>
+
+    <string name="load_config_download_error">Sorry there was an error downloading the configuration file.</string>
+    <string name="load_config_error">Sorry there was an error parsing the configuration file.</string>
+    <string name="load_config_success">Successfully loaded the configuration file.</string>
+    <string name="scan_not_available">Xin Lỗi,Bạn Phải Cài Đặt ZXing Barcode Scanner Để Dùng Chức Năng Này.</string>
+    <string name="cover_dec">cover</string>
+    <string name="pref_show_image_key">show.image</string>
+    <string name="pref_show_image_title">Show images in search</string>
+    <string name="pref_show_image_summary">Show images in search</string>
+    <string name="pref_limit_items_key">limit.items</string>
+    <string name="pref_limit_available_title">Available items only</string>
+    <string name="pref_limit_available_summary">Limit the search to available items only.</string>
+
+    <string name="invalid_data_error">The data found was too short</string>
+    <string name="my_books">My Books</string>
+    <string name="ils_disabled_error">Sorry, Your Koha does not allow that operation</string>
+    <string name="book_list_load_error">Error Loading My Books</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="no_library_branch_defined">(No Library Branch is defined)</string>
+    <string name="view_more_details">Xem Chi Tiết</string>
+</resources>

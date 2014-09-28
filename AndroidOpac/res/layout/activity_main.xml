@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@drawable/background">
+		
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="2dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="2dip" >
+
+        <TextView
+            android:id="@+id/userLoggedTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user_not_logged"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="73dp"
+            android:layout_height="102dp"
+            android:layout_margin="5dp"
+            android:layout_weight="0.62"
+            android:src="@drawable/icon" />
+
+        <TextView
+            style="@android:style/TextAppearance.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.36"
+            android:singleLine="false"
+            android:text="@string/label"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" 
+        >
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/search"
+            android:text="@string/search_button"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/login"
+            android:onClick="login"
+            android:text="@string/login_button"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+     <Button
+         android:id="@+id/mybooksbutton"
+         android:layout_width="200dp"
+         android:layout_height="70dp"
+         android:layout_gravity="center"
+         android:text="@string/my_books_button"
+         android:drawableLeft="@drawable/book"
+         android:textColor="#FFFFFF"
+         android:textStyle="bold"
+         android:textSize="22sp"
+         android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnCredits"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/credits"
+            android:text="@string/credits"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnInformation"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/infor"
+            android:text="@string/information"
+            android:textColor="#FFFFFF"
+            android:textSize="22dp"
+            android:textStyle="bold" 
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+</ScrollView>
